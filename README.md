@@ -15,7 +15,7 @@
 
 这里简要说明一下<br>
 package.json非常熟悉就是一些经常用的依赖<br>
-_watch.js 这个的功能是监听你在src工作区的工作 包括文件的增删改 并把你的改动复制到dist文件夹对应的位置<br>
+*_watch.js*这个的功能是监听你在src工作区的工作 包括文件的增删改 并把你的改动复制到dist文件夹对应的位置<br/>
 postcss.config.js 这个文件是postcss默认的config文件功能是压缩dist/css文件夹下所有的css<br>
 create.js 它的作用是初始化并创建dist和src两个文件夹 和里面的一些初始化文件<br>
 jsmini.js 它的作用是压缩dist/js里所有的js<br>
