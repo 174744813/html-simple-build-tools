@@ -26,7 +26,7 @@ jsmini.js 它的作用是压缩src/js里所有的js打包进dist<br>
 
 .babelrc 它的作用是编译ES6<br>
 
-rollup.config.dev.js 它的作用是支持ES6的模块化打包<br> 默认你的工作区的js入口是src/js/main.js 会被打包成src/js/bundle.js.<br>也就是说你在main.js里所import的模块 最终都被打进bundle.js,页面的引用入口文件是bundle.js.,<br>
+rollup.config.dev.js 它的作用是支持ES6的模块化打包<br> 默认你的工作区的js入口是src/js/main.js 会被打包成src/js/bundle.js.<br>也就是说你在main.js里所import的模块 最终都被打进bundle.js,所以页面的引用入口文件是bundle.js.,实际编码文件main.js<br>
 
 如果要在页面啊引入npm安装的包 ,<br>例如jquery 请在rollup.config.dev.js这样添加external: ['$',path.resolve( './node_modules/jquery' ),'_',path.resolve('./node_modules/underscore')] ，然后在js里就可以import $ from 'jquery'了 
 
