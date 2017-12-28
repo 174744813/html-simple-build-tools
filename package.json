@@ -13,7 +13,7 @@
     "images": "imagemin src/images/* --out-dir=dist/images/",
     "html": "node _html.js",
     "dev": "node create.js",
-    "httpserver": "cd src&&browser-sync start --server --files \"css/*.css, js/*.js,images/*.png,images/*.jpg, *.html\" ",
+    "httpserver": "cd src&&browser-sync start --server --files \"css/*.css,images/*.png,images/*.jpg, *.html\" ",
     "httpserver_build": "cd dist&&browser-sync start --server --files \"css/*.css,images/*.png,images/*.jpg, *.html\" ",
     "rollup": "rollup -c rollup.config.dev.js --watch",
     "build": "npm-run-all css js images html httpserver_build"
